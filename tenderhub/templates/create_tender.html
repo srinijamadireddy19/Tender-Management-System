@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Create Tender</h2>
+
+<form method="POST" action="{{ url_for('create_tender') }}">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+    <div class="form-group">
+        <label for="type">Type</label>
+        <input type="text" class="form-control" id="type" name="type" required>
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="text" class="form-control" id="price" name="price" required>
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" name="description" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="deadline">Deadline</label>
+        <input type="date" class="form-control" id="deadline" name="deadline" required>
+    </div>
+    <button type="submit" class="btn btn-success">Create Tender</button>
+</form>
+
+{% endblock %}

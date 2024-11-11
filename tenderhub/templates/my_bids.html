@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>My Bid History</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tender ID</th>
+            <th>Bid Amount</th>
+            <th>Status</th>
+            <th>Timestamp</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for bid in bids %}
+        <tr>
+            <td>{{ bid.tender_id }}</td>
+            <td>{{ bid.amount }}</td>
+            <td>{{ bid.status }}</td>
+            <td>{{ bid.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

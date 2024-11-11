@@ -1,0 +1,82 @@
+
+.navbar-custom {
+    background-color: #6a1b9a; /* Purple color */
+    color: white;
+    height: 100px;
+}
+
+.navbar-custom .navbar-brand {
+    color: white;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #d1c4e9; /* Light purple hover effect */
+}
+
+
+
+body {
+    background-color: #ffffff; /* White background */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-box {
+    background-color: #fff;
+    border: 2px solid #6a1b9a; /* Purple border */
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6a1b9a; /* Purple color */
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #6a1b9a;
+    border-color: #6a1b9a;
+}
+
+.btn-primary:hover {
+    background-color: #8e24aa;
+    border-color: #8e24aa;
+}
+
+/* Custom style for register page */
+.btn-purple {
+    background-color: #6a1b9a;
+    color: #fff;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #5a1481;
+    color: #fff;
+}
+
+.card-header.bg-purple {
+    background-color: #6a1b9a !important;
+}
+
+.card-body {
+    border: 1px solid #6a1b9a;
+}

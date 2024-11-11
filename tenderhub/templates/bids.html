@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Your Bids</h2>
+
+{% if bids %}
+    <ul class="list-group mt-4">
+        {% for bid in bids %}
+            <li class="list-group-item">
+                <strong>Bid Amount:</strong> {{ bid.amount }} - 
+                <strong>Status:</strong> {{ bid.status }}
+                <span class="float-right">
+                    <a href="{{ url_for('place_bid', tender_id=bid.tender_id) }}" class="btn btn-warning btn-sm">Edit Bid</a>
+                </span>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p class="mt-4">You have not placed any bids yet.</p>
+{% endif %}
+<a href="{{ url_for('tender') }}" class="btn btn-secondary mt-3">Back to Tenders</a>
+{% endblock %}
